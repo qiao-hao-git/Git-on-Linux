@@ -94,7 +94,7 @@ Add a README file(推荐添加一个readme文件)
 
 8. 合并分支
 
-`git merge + 分支'
+`git merge + 分支`
 
 将分支合并到main分支上
 
