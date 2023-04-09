@@ -36,20 +36,22 @@ Add a README file(推荐添加一个readme文件)
 
 7. 在本地提交代码
 
-`git init`
-
 初始化项目
 
-`git add .`
+`git init`
 
 将你的文件添加到暂存区(git add .添加所有可追踪文件，git add + 文件名 添加指定文件， git add -f + 文件名 强制添加文件，可追踪文件和不可追踪文件均可，不可追踪文件通过git add添加后可以通过git追踪到)
 
-`git commit -m 你对文件的描述`
+`git add .`
 
-`git remote add origin + 仓库地址`
+添加你对文件的描述
+
+`git commit -m 你对文件的描述`
 
 仓库地址获取:打开你的仓库->Code->SSH(推荐SSH地址)
 
-`git push origin main`
+`git remote add origin + 仓库地址`
 
 将文件推送到main分支
+
+`git push origin main`
