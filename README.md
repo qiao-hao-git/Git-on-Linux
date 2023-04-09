@@ -55,3 +55,22 @@ Add a README file(推荐添加一个readme文件)
 将文件推送到main分支
 
 `git push origin main`
+
+## 其他git操作
+
+1. 查看当前仓库的状态
+
+`git status`
+
+2. 查看文件的修改内容
+
+`git diff + 文件名`
+
+3. 查看修改的历史记录
+
+`git log`
+
+4. git回退版本
+
+`git reset --hard HEAD^'
+
