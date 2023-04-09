@@ -74,3 +74,42 @@ Add a README file(推荐添加一个readme文件)
 
 `git reset --hard HEAD^'
 
+上一个版本是HEAD^,上上个版本是HEAD^^,也可以写成HEAD~2
+
+`git reset --hard + 版本号`
+
+回退到指定版本
+
+5. 创建新分支
+
+`git branch -b + 新的分支`
+
+6. 查看当前分支(当前分支前面会标一个*号)
+
+`git branch`
+
+7. 切换分支
+
+`git checkout 分支`
+
+8. 合并分支
+
+`git merge + 分支'
+
+将分支合并到main分支上
+
+9. 删除分支
+
+`git branch -d + 分支`
+
+10. 创建并切换新的分支
+
+`git switch -c + 分支`
+
+`git checkout -b + 分支`
+
+11. 切换到已有的分支
+
+`git switch + 分支`
+
+
