@@ -5,18 +5,23 @@
 
 ## 第一次使用git
 1. 本地创建SSH
-> ssh-keygen -t rsa -C 你的邮箱
+
+`ssh-keygen -t rsa -C 你的邮箱`
+
 2. 成功的话会在~/下生成.ssh隐藏文件夹,ctrl+h可以显示隐藏文件夹
 3. github上创建SSH，Account Setting->New SSH Key->title(随便写)->Key(将id_rsa.pub中的内容复制进去即可)
 4. 验证是否成功
+
 `ssh -T git@github.com`
 
 出现You've successfully authenticated, but GitHub does not provide shell access.说明成功连上github
 
 5. 设置username和email
+
 `git config --global user.name 你的github名称`
 
 `git config --global user.email 你的邮箱`
+
 6. 创建一个github远程仓库
 先创建一个github远程仓库:右上角点击头像->Your Repositories->New
 ![成电飞书20230409-162508](https://user-images.githubusercontent.com/90328028/230762401-f68697d7-86b3-490e-a030-8482af1157b0.png)
@@ -25,11 +30,12 @@
 
 Desription根据自己的需要填写
 
-选择Pulic or Private是否向他人公开你的仓库
+选择Public or Private是否向他人公开你的仓库
 
 Add a README file(推荐添加一个readme文件)
 
 7. 在本地提交代码
+
 `git init`
 
 `git add .`
