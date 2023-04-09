@@ -72,7 +72,7 @@ Add a README file(推荐添加一个readme文件)
 
 4. git回退版本
 
-`git reset --hard HEAD^'
+`git reset --hard HEAD^`
 
 上一个版本是HEAD^,上上个版本是HEAD^^,也可以写成HEAD~2
 
