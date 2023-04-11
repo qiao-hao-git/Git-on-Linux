@@ -112,6 +112,8 @@ Add a README file(推荐添加一个readme文件)
 
 `git switch + 分支`
 
+[github官方文档](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github)
+
 # 注意:github目前已将主分支从master改为main,但git默认主分支仍为master,注意踩坑!!!
 
 # 以上为Linux系统的git配置与一些基本操作,Windows系统与其大同小异
