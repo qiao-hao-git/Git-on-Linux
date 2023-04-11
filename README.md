@@ -4,25 +4,25 @@
 `sudo apt-get install git`
 
 ## 第一次使用git
-1. 本地创建SSH
+1.本地创建SSH
 
 `ssh-keygen -t rsa -C 你的邮箱`
 
-2. 成功的话会在~/下生成.ssh隐藏文件夹,ctrl+h可以显示隐藏文件夹
-3. github上创建SSH，Account Setting->New SSH Key->title(随便写)->Key(将id_rsa.pub中的内容复制进去即可)
-4. 验证是否成功
+2.成功的话会在~/下生成.ssh隐藏文件夹,ctrl+h可以显示隐藏文件夹
+3.github上创建SSH，Account Setting->New SSH Key->title(随便写)->Key(将id_rsa.pub中的内容复制进去即可)
+4.验证是否成功
 
 `ssh -T git@github.com`
 
 出现You've successfully authenticated, but GitHub does not provide shell access.说明成功连上github
 
-5. 设置username和email
+5.设置username和email
 
 `git config --global user.name 你的github名称`
 
 `git config --global user.email 你的邮箱`
 
-6. 创建一个github远程仓库
+6.创建一个github远程仓库
 先创建一个github远程仓库:右上角点击头像->Your Repositories->New
 ![成电飞书20230409-162508](https://user-images.githubusercontent.com/90328028/230762401-f68697d7-86b3-490e-a030-8482af1157b0.png)
 
@@ -34,7 +34,7 @@ Desription根据自己的需要填写
 
 Add a README file(推荐添加一个readme文件)
 
-7. 在本地提交代码
+7.在本地提交代码
 
 初始化项目
 
@@ -58,19 +58,19 @@ Add a README file(推荐添加一个readme文件)
 
 ## 其他git操作
 
-1. 查看当前仓库的状态
+1.查看当前仓库的状态
 
 `git status`
 
-2. 查看文件的修改内容
+2.查看文件的修改内容
 
 `git diff + 文件名`
 
-3. 查看修改的历史记录
+3.查看修改的历史记录
 
 `git log`
 
-4. git回退版本
+4.git回退版本
 
 `git reset --hard HEAD^`
 
@@ -80,40 +80,41 @@ Add a README file(推荐添加一个readme文件)
 
 回退到指定版本
 
-5. 创建新分支
+5.创建新分支
 
 `git branch -b + 新的分支`
 
-6. 查看当前分支(当前分支前面会标一个*号)
+6.查看当前分支(当前分支前面会标一个*号)
 
 `git branch`
 
-7. 切换分支
+7.切换分支
 
 `git checkout 分支`
 
-8. 合并分支
+8.合并分支
 
 `git merge + 分支`
 
 将分支合并到main分支上
 
-9. 删除分支
+9.删除分支
 
 `git branch -d + 分支`
 
-10. 创建并切换新的分支
+10.创建并切换新的分支
 
 `git switch -c + 分支`
 
 `git checkout -b + 分支`
 
-11. 切换到已有的分支
+11.切换到已有的分支
 
 `git switch + 分支`
 
 [github官方文档](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github)
 
-# 注意:github目前已将主分支从master改为main,但git默认主分支仍为master,注意踩坑!!!
 
-# 以上为Linux系统的git配置与一些基本操作,Windows系统与其大同小异
+**注意:github目前已将主分支从master改为main,但git默认主分支仍为master,注意踩坑!!!**
+
+**以上为Linux系统的git配置与一些基本操作,Windows系统与其大同小异**
