@@ -54,7 +54,7 @@ Add a README file(推荐添加一个readme文件)
 
 将文件推送到main分支
 
-`git push origin main`
+`git push origin master`
 
 ## 其他git操作
 
